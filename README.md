@@ -1,2 +1,3 @@
-# InfiniteShelves
-My flutter app
+# flutter_app
+
+A new Flutter project.
