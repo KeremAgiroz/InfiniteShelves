@@ -8,9 +8,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(200, 201, 170, 100),
       // AppBar
       appBar: AppBar(
-        title: const Text('Ana Sayfa'),
+        title: const Text('Infinity Shares'),
+        backgroundColor: Color.fromARGB(200, 201, 170, 100),
         actions: [
           IconButton(
             icon: const Icon(CupertinoIcons.bell),
@@ -77,16 +79,26 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
 
-      // Alt navigasyon çubuğu
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor:
+            Color.fromARGB(200, 201, 170, 100), // Arka plan rengini ayarla
+        selectedItemColor:
+            Color.fromARGB(254, 63, 101, 100), // Seçili öğe rengi
+        unselectedItemColor:
+            Color.fromRGBO(200, 201, 170, 100), // Seçili olmayan öğe rengi
+        type: BottomNavigationBarType.fixed, // Renk geçişi olmaması için
         items: const [
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.home),
             label: 'Ana Sayfa',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.search),
-            label: 'Keşfet',
+            icon: Icon(CupertinoIcons.pencil),
+            label: 'Yazarlar',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(CupertinoIcons.book),
+            label: 'Kitaplar',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.person),
