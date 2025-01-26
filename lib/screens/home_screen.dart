@@ -1,6 +1,10 @@
 //ana ekran
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_app/core/constants.dart';
+import 'package:flutter_app/core/routes.dart';
+import 'package:flutter_app/widgets/bottom_menu.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,14 +12,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(200, 201, 170, 100),
+      backgroundColor: arkaplanRengim,
       // AppBar
       appBar: AppBar(
         title: const Text('Infinity Shares'),
         backgroundColor: Color.fromARGB(200, 201, 170, 100),
         actions: [
           IconButton(
-            icon: const Icon(CupertinoIcons.bell),
+            icon: const Icon(CupertinoIcons.app),
             onPressed: () {},
           ),
         ],
@@ -28,14 +32,14 @@ class HomeScreen extends StatelessWidget {
             // Drawer Header
             Container(
               height: 200,
-              color: Colors.blue,
+              color: arkaplanRengim,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Icon(
                     CupertinoIcons.person_circle,
                     size: 80,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                   const SizedBox(height: 10),
                   const Text(
@@ -63,6 +67,27 @@ class HomeScreen extends StatelessWidget {
                 Navigator.pop(context);
               },
             ),
+            ListTile(
+              leading: const Icon(CupertinoIcons.person),
+              title: const Text('Profil'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(CupertinoIcons.pencil),
+              title: const Text('Yazarlar'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(CupertinoIcons.book),
+              title: const Text('Kitaplar'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
           ],
         ),
       ),
@@ -79,36 +104,7 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
 
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor:
-            Color.fromARGB(200, 201, 170, 100), // Arka plan rengini ayarla
-        selectedItemColor:
-            Color.fromARGB(254, 63, 101, 100), // Seçili öğe rengi
-        unselectedItemColor:
-            Color.fromRGBO(200, 201, 170, 100), // Seçili olmayan öğe rengi
-        type: BottomNavigationBarType.fixed, // Renk geçişi olmaması için
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'Ana Sayfa',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.pencil),
-            label: 'Yazarlar',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.book),
-            label: 'Kitaplar',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.person),
-            label: 'Profil',
-          ),
-        ],
-        onTap: (index) {
-          // Navigasyon işlemleri buraya gelecek
-        },
-      ),
+      bottomNavigationBar: BottomMenu(),
     );
   }
 }
