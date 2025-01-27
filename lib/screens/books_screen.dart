@@ -9,7 +9,7 @@ class BooksScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: arkaplanRengim,
+      backgroundColor: colors["surface"],
       body: Center(
         child: Text("Kitaplar ekranim"),
       ),

@@ -1,10 +1,12 @@
 //ana ekran
+import 'package:dotlottie_loader/dotlottie_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/core/constants.dart';
 import 'package:flutter_app/core/routes.dart';
 import 'package:flutter_app/widgets/bottom_menu.dart';
 import 'package:go_router/go_router.dart';
+import 'package:lottie/lottie.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +14,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: arkaplanRengim,
+      backgroundColor: colors["surface"],
       // AppBar
       appBar: AppBar(
         title: const Text('Infinity Shares'),
@@ -32,7 +34,7 @@ class HomeScreen extends StatelessWidget {
             // Drawer Header
             Container(
               height: 200,
-              color: arkaplanRengim,
+              color: colors["surface"],
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -95,12 +97,45 @@ class HomeScreen extends StatelessWidget {
       // Ana içerik
       body: Column(
         children: [
-          Expanded(
-            child: Container(
-              padding: const EdgeInsets.all(16),
-              child: const Text('Ana Sayfa İçeriği'),
-            ),
+          // Expanded(
+          //   child: Container(
+          //     padding: const EdgeInsets.all(1),
+          //     child: const Text('Ana Sayfa İçeriği'),
+          //   ),
+          // ),
+          SizedBox(
+            width: 150,
+            child: DotLottieLoader.fromAsset("assets/motions/home.lottie",
+                frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
+              if (dotlottie != null) {
+                return Lottie.memory(dotlottie.animations.values.single);
+              } else {
+                return Container();
+              }
+            }),
           ),
+          Expanded(
+              child: ListView(
+            children: [
+              Text(
+                "Günün Alıntısı",
+                style: TextStyle(fontSize: 24),
+              ),
+              Text(
+                "'Şu uyku insanın sevgilisi gibi bir şey, gelmeyince sinirlendiriyor.' ~Mahalle Kahvesi - Sait Faik Abasıyanık",
+                style: TextStyle(fontSize: 15),
+              ),
+              Text("Günün Alıntısı", style: TextStyle(fontSize: 10)),
+              Text(
+                "Günün Alıntısı",
+                style: TextStyle(fontSize: 24),
+              ),
+              Text(
+                "Günün Alıntısı",
+                style: TextStyle(fontSize: 24),
+              ),
+            ],
+          ))
         ],
       ),
 
