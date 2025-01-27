@@ -119,16 +119,28 @@ class HomeScreen extends StatelessWidget {
             children: [
               Text(
                 "Günün Alıntısı",
-                style: TextStyle(fontSize: 24),
+                style: TextStyle(
+                  fontSize: 24,
+                  color: colors["onSurface"],
+                ),
               ),
               Text(
                 "'Şu uyku insanın sevgilisi gibi bir şey, gelmeyince sinirlendiriyor.' ~Mahalle Kahvesi - Sait Faik Abasıyanık",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(
+                  fontSize: 15,
+                  color: colors["onSecondary"],
+                ),
               ),
-              Text("Günün Alıntısı", style: TextStyle(fontSize: 10)),
+              Text(
+                "Günün Kitabı",
+                style: TextStyle(
+                  fontSize: 24,
+                  color: colors["onSurface"],
+                ),
+              ),
               Text(
                 "Günün Alıntısı",
-                style: TextStyle(fontSize: 24),
+                style: TextStyle(fontSize: 24, color: colors["onSecondary"]),
               ),
               Text(
                 "Günün Alıntısı",
