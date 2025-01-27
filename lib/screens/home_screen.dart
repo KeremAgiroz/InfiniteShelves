@@ -4,9 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/core/constants.dart';
 import 'package:flutter_app/core/routes.dart';
+import 'package:flutter_app/core/themes.dart';
 import 'package:flutter_app/widgets/bottom_menu.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
+import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,15 +16,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: colors["surface"],
       // AppBar
       appBar: AppBar(
         title: const Text('Infinity Shares'),
-        backgroundColor: Color.fromARGB(200, 201, 170, 100),
+        // backgroundColor: Color.fromARGB(200, 201, 170, 100),
         actions: [
           IconButton(
-            icon: const Icon(CupertinoIcons.app),
-            onPressed: () {},
+            icon: Icon(CupertinoIcons.app),
+            onPressed: () {
+              context.read<ThemeProvider>().toggleTheme();
+            },
           ),
         ],
       ),
