@@ -93,6 +93,13 @@ class HomeScreen extends StatelessWidget {
                 Navigator.pop(context);
               },
             ),
+            Spacer(),
+            Divider(),
+            ListTile(
+              leading: Icon(Icons.logout),
+              title: Text('Çıkış Yap'),
+              onTap: () => context.go("/login"),
+            ),
           ],
         ),
       ),

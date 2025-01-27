@@ -2,8 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/authors_screen.dart';
 import 'package:flutter_app/screens/books_screen.dart';
+import 'package:flutter_app/screens/login_screen.dart';
 import 'package:flutter_app/screens/profile_screen.dart';
 import 'package:flutter_app/screens/search_screen.dart';
+import 'package:flutter_app/screens/settings_screen.dart';
 import 'package:go_router/go_router.dart';
 import '../screens/loading_screen.dart';
 import '../screens/home_screen.dart';
@@ -14,27 +16,59 @@ final router = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (context, state) => const LoadingScreen(),
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const LoadingScreen(),
+      ),
     ),
     GoRoute(
       path: '/home',
-      builder: (context, state) => const HomeScreen(),
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const HomeScreen(),
+      ),
     ),
     GoRoute(
       path: '/profile',
-      builder: (context, state) => const ProfileScreen(),
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const ProfileScreen(),
+      ),
     ),
     GoRoute(
       path: '/search',
-      builder: (context, state) => const SearchScreen(),
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const SearchScreen(),
+      ),
     ),
     GoRoute(
       path: '/books',
-      builder: (context, state) => const BooksScreen(),
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const BooksScreen(),
+      ),
     ),
     GoRoute(
       path: '/authors',
-      builder: (context, state) => const AuthorsScreen(),
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const AuthorsScreen(),
+      ),
+    ),
+    GoRoute(
+      path: '/login',
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const LoginScreen(),
+      ),
+    ),
+    GoRoute(
+      path: '/settings',
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const SettingsScreen(),
+      ),
     ),
   ],
 );
