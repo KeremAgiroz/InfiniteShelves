@@ -9,7 +9,6 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: colors["primary"],
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
@@ -49,12 +48,12 @@ class SearchScreen extends StatelessWidget {
                     spacing: 8,
                     children: [
                       ActionChip(
-                        label: Text("Sabahattin Ali"),
+                        label: Text("Necip Fazıl"),
                         onPressed: () {},
                         avatar: Icon(Icons.history, size: 16),
                       ),
                       ActionChip(
-                        label: Text("Haruki Murakami"),
+                        label: Text("Dart"),
                         onPressed: () {},
                         avatar: Icon(Icons.history, size: 16),
                       ),
@@ -64,52 +63,219 @@ class SearchScreen extends StatelessWidget {
               ),
             ),
           ),
-          SliverPadding(
-            padding: EdgeInsets.all(16),
-            sliver: SliverGrid(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                mainAxisSpacing: 16,
-                crossAxisSpacing: 16,
-                childAspectRatio: 0.85,
-              ),
-              delegate: SliverChildBuilderDelegate(
-                (context, index) => Card(
-                  clipBehavior: Clip.antiAlias,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+          // Burada iki kutuyu yan yana koyacağımız Row yapısı kullanılıyor
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      AspectRatio(
-                        aspectRatio: 16 / 9,
-                        child: Container(
-                          color:
-                              Theme.of(context).colorScheme.secondaryContainer,
+                      // Birinci kutu
+                      Expanded(
+                        child: Card(
+                          elevation: 4,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // Resim
+                              Container(
+                                height: MediaQuery.of(context).size.width *
+                                    0.4, // Resim yüksekliği ekran genişliğine göre ayarlandı
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.vertical(
+                                      top: Radius.circular(16)),
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/icons/apple_icon.png'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Başlık 1",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleMedium,
+                                    ),
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      "Kart 1 içeriği burada yer alıyor.",
+                                      style:
+                                          Theme.of(context).textTheme.bodySmall,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsets.all(8),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Başlık ${index + 1}",
-                              style: Theme.of(context).textTheme.titleMedium,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                            Text(
-                              "Alt başlık açıklama yazısı burada yer alır",
-                              style: Theme.of(context).textTheme.bodySmall,
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ],
+                      SizedBox(width: 8),
+                      // İkinci kutu
+                      Expanded(
+                        child: Card(
+                          elevation: 4,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // Resim
+                              Container(
+                                height: MediaQuery.of(context).size.width *
+                                    0.4, // Resim yüksekliği ekran genişliğine göre ayarlandı
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.vertical(
+                                      top: Radius.circular(16)),
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/icons/apple_icon.png'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Başlık 2",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleMedium,
+                                    ),
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      "Kart 2 içeriği burada yer alıyor.",
+                                      style:
+                                          Theme.of(context).textTheme.bodySmall,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],
                   ),
-                ),
-                childCount: 10,
+                  SizedBox(height: 16),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      // Birinci kutu
+                      Expanded(
+                        child: Card(
+                          elevation: 4,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // Resim
+                              Container(
+                                height: MediaQuery.of(context).size.width *
+                                    0.4, // Resim yüksekliği ekran genişliğine göre ayarlandı
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.vertical(
+                                      top: Radius.circular(16)),
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/icons/apple_icon.png'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Başlık 1",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleMedium,
+                                    ),
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      "Kart 1 içeriği burada yer alıyor.",
+                                      style:
+                                          Theme.of(context).textTheme.bodySmall,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 8),
+                      // İkinci kutu
+                      Expanded(
+                        child: Card(
+                          elevation: 4,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // Resim
+                              Container(
+                                height: MediaQuery.of(context).size.width *
+                                    0.4, // Resim yüksekliği ekran genişliğine göre ayarlandı
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.vertical(
+                                      top: Radius.circular(16)),
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/icons/apple_icon.png'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Başlık 2",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleMedium,
+                                    ),
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      "Kart 2 içeriği burada yer alıyor.",
+                                      style:
+                                          Theme.of(context).textTheme.bodySmall,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),

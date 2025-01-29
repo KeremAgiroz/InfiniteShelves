@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
         // backgroundColor: Color.fromARGB(200, 201, 170, 100),
         actions: [
           IconButton(
-            icon: Icon(CupertinoIcons.app),
+            icon: Icon(CupertinoIcons.moon),
             onPressed: () {
               context.read<ThemeProvider>().toggleTheme();
             },

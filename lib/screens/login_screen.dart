@@ -127,6 +127,19 @@ class _LoginScreenState extends State<LoginScreen> {
                 label: Text("Apple ID ile Giris Yap",
                     style: TextStyle(fontSize: 16)),
               ),
+              SizedBox(height: 12),
+              OutlinedButton.icon(
+                onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                  minimumSize: Size(double.infinity, 50),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                icon: Image.asset('assets/icons/apple_icon.png', height: 24),
+                label: Text("Retala ID ile Giriş Yap",
+                    style: TextStyle(fontSize: 16)),
+              ),
             ],
           ),
         ),
