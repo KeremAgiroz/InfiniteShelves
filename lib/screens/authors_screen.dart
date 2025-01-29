@@ -66,7 +66,7 @@ class AuthorsScreen extends StatelessWidget {
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/images/Kumarbaz.jpeg'),
+                                        'assets/images/Victorhugo.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -77,16 +77,10 @@ class AuthorsScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Kumarbaz",
+                                      "Victor Hugo",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "Dostoyevski",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ],
                                 ),
@@ -115,7 +109,7 @@ class AuthorsScreen extends StatelessWidget {
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/images/Fahrenheit.jpeg'),
+                                        'assets/images/NecipFazilKisakurek.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -126,16 +120,10 @@ class AuthorsScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Fahrenheit 451",
+                                      "Necip Fazil Kisakurek",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "Ray Bradbury",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ],
                                 ),
@@ -169,7 +157,7 @@ class AuthorsScreen extends StatelessWidget {
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/images/Sefiller.jpeg'),
+                                        'assets/images/Stephen.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -180,16 +168,10 @@ class AuthorsScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Sefiller",
+                                      "Stephen King",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "Victor Hugo",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ],
                                 ),
@@ -218,7 +200,7 @@ class AuthorsScreen extends StatelessWidget {
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/images/Livaneli.jpeg'),
+                                        'assets/images/Franzkafka.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -229,16 +211,10 @@ class AuthorsScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Huzursuzluk",
+                                      "Franz Kafka",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "Zülfü Livaneli",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ],
                                 ),
@@ -271,7 +247,7 @@ class AuthorsScreen extends StatelessWidget {
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/images/boslukhissi.jpeg'),
+                                        'assets/images/Oguzatay.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -282,16 +258,10 @@ class AuthorsScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Çocuklukta İhmalin İzi: Bosluk Hissi",
+                                      "Oguz Atay",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "Dr. Jonice Webb",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ],
                                 ),
@@ -320,7 +290,7 @@ class AuthorsScreen extends StatelessWidget {
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/images/thekiterunner.jpeg'),
+                                        'assets/images/Orhannpamuk.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -331,16 +301,10 @@ class AuthorsScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "The Kite Runner",
+                                      "Orhan Pamuk",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "Khaled Hosseini",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ],
                                 ),
@@ -373,7 +337,7 @@ class AuthorsScreen extends StatelessWidget {
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/images/farelerveinsanlar.jpeg'),
+                                        'assets/images/Federico.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -384,16 +348,10 @@ class AuthorsScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Fareler ve Insanlar",
+                                      "Federico García Lorca",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "John Steinbeck",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ],
                                 ),
@@ -422,7 +380,7 @@ class AuthorsScreen extends StatelessWidget {
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/images/kucukprens.jpeg'),
+                                        'assets/images/FilippoMarinetti.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -433,118 +391,10 @@ class AuthorsScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Kucuk Prens",
+                                      "Flippo Marinetti",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "Antoine de Saint-Exupery",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      // Birinci kutu
-                      Expanded(
-                        child: Card(
-                          elevation: 4,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              // Resim
-                              Container(
-                                height: MediaQuery.of(context).size.width *
-                                    0.7, // Resim yüksekliği ekran genişliğine göre ayarlandı
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.vertical(
-                                      top: Radius.circular(16)),
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                        'assets/images/pembefilidusunme.jpeg'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(16.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "Pembe Fili Dusunme",
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "Zeynep Selvili Carmikli",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      SizedBox(width: 8),
-                      // İkinci kutu
-                      Expanded(
-                        child: Card(
-                          elevation: 4,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              // Resim
-                              Container(
-                                height: MediaQuery.of(context).size.width *
-                                    0.7, // Resim yüksekliği ekran genişliğine göre ayarlandı
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.vertical(
-                                      top: Radius.circular(16)),
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                        'assets/images/sokrates.jpeg'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(16.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "Sokrates Oncesi ve Sonrasi",
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "F.M.Cornford",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ],
                                 ),
@@ -584,37 +434,6 @@ class AuthorsScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Fiyat Aralığı',
-              style: Theme.of(context).textTheme.titleMedium,
-            ),
-            SizedBox(height: 8),
-            Row(
-              children: [
-                Expanded(
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Min',
-                      prefixText: '₺',
-                      border: OutlineInputBorder(),
-                    ),
-                    keyboardType: TextInputType.number,
-                  ),
-                ),
-                SizedBox(width: 16),
-                Expanded(
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Max',
-                      prefixText: '₺',
-                      border: OutlineInputBorder(),
-                    ),
-                    keyboardType: TextInputType.number,
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(height: 16),
-            Text(
               'Kategoriler',
               style: Theme.of(context).textTheme.titleMedium,
             ),
@@ -623,22 +442,42 @@ class AuthorsScreen extends StatelessWidget {
               spacing: 8,
               children: [
                 FilterChip(
-                  label: Text('Elektronik'),
+                  label: Text('Turk Yazarlar'),
                   selected: true,
                   onSelected: (_) {},
                 ),
                 FilterChip(
-                  label: Text('Moda'),
+                  label: Text('Fransiz Yazarlar'),
                   selected: false,
                   onSelected: (_) {},
                 ),
                 FilterChip(
-                  label: Text('Ev'),
+                  label: Text('Rus Yazarlar'),
                   selected: false,
                   onSelected: (_) {},
                 ),
                 FilterChip(
-                  label: Text('Spor'),
+                  label: Text('Alman Yazarlar'),
+                  selected: false,
+                  onSelected: (_) {},
+                ),
+                FilterChip(
+                  label: Text('Ingiliz Yazarlar'),
+                  selected: false,
+                  onSelected: (_) {},
+                ),
+                FilterChip(
+                  label: Text('Italyan Yazarlar'),
+                  selected: false,
+                  onSelected: (_) {},
+                ),
+                FilterChip(
+                  label: Text('Amerikan Yazarlar'),
+                  selected: false,
+                  onSelected: (_) {},
+                ),
+                FilterChip(
+                  label: Text('İspanyol Yazarlar'),
                   selected: false,
                   onSelected: (_) {},
                 ),
@@ -652,7 +491,7 @@ class AuthorsScreen extends StatelessWidget {
             SizedBox(height: 8),
             TextField(
               decoration: InputDecoration(
-                hintText: 'Ürün ara...',
+                hintText: 'Yazarları ara...',
                 prefixIcon: Icon(Icons.search),
                 border: OutlineInputBorder(),
               ),
