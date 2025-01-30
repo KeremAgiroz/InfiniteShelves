@@ -124,7 +124,10 @@ lib/
 
 ## Ekran Görüntüleri
 
-[ [https://github.com/user-attachments/assets/f684f4a4-9b91-4312-a757-e4c2ac747638](https://github.com/user-attachments/assets/a5b41ec7-9010-4114-bd7c-d14b7e30eb60)
+[ https://github.com/user-attachments/assets/1710ad1b-6b71-49c7-8476-f86e89994f02](https://github.com/user-attachments/assets/1710ad1b-6b71-49c7-8476-f86e89994f02)
+
+
+ 
 ![Image](https://github.com/user-attachments/assets/ba4c2348-250a-4387-b3d2-17f14b448218)
 
 ![Image](https://github.com/user-attachments/assets/98c6633b-4edd-4db8-ad0a-bd003ff7205d)
@@ -171,7 +174,7 @@ lib/
 
 ![Image](https://github.com/user-attachments/assets/6cec028b-e28e-47f0-8084-0b8cf24a050f)
 
-![Image](https://github.com/user-attachments/assets/78fa1f13-beb2-4e67-9822-8c503cd19e7e)]
+![Image](https://github.com/user-attachments/assets/78fa1f13-beb2-4e67-9822-8c503cd19e7e)
 
   
 
