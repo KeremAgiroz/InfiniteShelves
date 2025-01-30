@@ -12,7 +12,8 @@ class BooksScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Kitaplar"),
+        title:
+            Text("Kitaplar", style: Theme.of(context).textTheme.headlineMedium),
         actions: [
           IconButton(
             icon: Icon(CupertinoIcons.moon),

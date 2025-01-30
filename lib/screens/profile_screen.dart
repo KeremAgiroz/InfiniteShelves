@@ -14,7 +14,8 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Profil"),
+        title:
+            Text("Profil", style: Theme.of(context).textTheme.headlineMedium),
         actions: [
           IconButton(
             icon: Icon(CupertinoIcons.moon),

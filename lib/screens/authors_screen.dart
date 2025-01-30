@@ -12,7 +12,8 @@ class AuthorsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Yazarlar"),
+        title:
+            Text("Yazarlar", style: Theme.of(context).textTheme.headlineMedium),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.filter_list),

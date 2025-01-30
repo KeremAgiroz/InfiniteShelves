@@ -12,7 +12,7 @@ class LoadingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 127, 115, 2),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -23,10 +23,10 @@ class LoadingScreen extends StatelessWidget {
               children: [
                 // Logo bölümü
                 Container(
-                  width: 150,
-                  height: 150,
+                  width: 300,
+                  height: 350,
                   child: Image.asset(
-                    'assets/images/amblem.webp',
+                    'assets/icons/mavikit.png',
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -53,9 +53,9 @@ class LoadingScreen extends StatelessWidget {
                 InkWell(
                   onTap: () => context.go("/home"),
                   child: SizedBox(
-                    width: 300,
+                    width: 250,
                     child: DotLottieLoader.fromAsset(
-                        "assets/motions/loading.lottie",
+                        "assets/motions/begen.lottie",
                         frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
                       if (dotlottie != null) {
                         return Lottie.memory(

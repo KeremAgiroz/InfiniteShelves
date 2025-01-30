@@ -19,7 +19,9 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       // AppBar
       appBar: AppBar(
-        title: const Text('Infinity Shares'),
+        title: Text('Infinite Shelves',
+            style: Theme.of(context).textTheme.headlineMedium),
+        centerTitle: true,
         // backgroundColor: Color.fromARGB(200, 201, 170, 100),
         actions: [
           IconButton(
@@ -108,7 +110,7 @@ class HomeScreen extends StatelessWidget {
           // ),
           SizedBox(
             width: 150,
-            child: DotLottieLoader.fromAsset("assets/motions/home.lottie",
+            child: DotLottieLoader.fromAsset("assets/motions/Fenerliii.lottie",
                 frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
               if (dotlottie != null) {
                 return Lottie.memory(dotlottie.animations.values.single);
@@ -123,10 +125,9 @@ class HomeScreen extends StatelessWidget {
                 Text(
                   textAlign: TextAlign.center,
                   "Sonsuz Raflarda Kaybolmaya Hazır Mısın?",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: colors["onSurface"],
-                  ),
+                  style: Theme.of(context).textTheme.headlineSmall,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
               ],
             ),
