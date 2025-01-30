@@ -8,7 +8,7 @@ import 'package:lottie/lottie.dart';
 
 class LoadingScreen extends StatelessWidget {
   const LoadingScreen({super.key});
-
+//k
   @override
   Widget build(BuildContext context) {
     return Scaffold(
