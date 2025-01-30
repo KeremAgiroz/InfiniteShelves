@@ -4,13 +4,13 @@
 
   
 
-![İstinye Üniversitesi](https://www.unitededucation.com/linklogoch/istinye-university-logo.png)
+![İInfinite Shelves](mavikit.webp)
 
   
 
 ## Proje Hakkında
 
-[Projenin kısa tanımı ve amacı buraya yazılacak]
+Uygulamanın arayüzü sade ve ferah bir tasarıma sahiptir. Kullanıcılar, diledikleri gibi kitaplarını okuyabilecekleri, yazarlar hakkında bilgi edinebilecekleri, istedikleri kitabı veya yazarı aratarak kolayca bulabilecekleri bir uygulamadır. Ayrıca, filtreleme özelliğini kullanarak görmek istedikleri edebiyatın yazarlarını listeleyebilir ve o edebiyata ait kitapları okuyabilirler.
 
   
 
@@ -22,17 +22,17 @@
 
 -  **Takım Üyeleri:**
 
-- X [GitHub](GitHub linki)
+- X [GitHub]([KeremAgiroz (Kerem Ağıröz)](https://github.com/KeremAgiroz))
 
   
 
 ## Özellikler
 
-- [Ana özellik 1]
+- [Dilenen kitap aratılarak okunabilir]
 
-- [Ana özellik 2]
+- [Yazarlar hakkında bilgiler edinilebilir]
 
-- [Ana özellik 3]
+- [İstenilen edebiyat türü seçilip o ülkenin edebiyatına ait kitaplar okunabilir]
 
   
 
@@ -52,9 +52,9 @@
 
 ### Gereksinimler
 
-- Flutter SDK (sürüm X.X.X)
+- Flutter SDK (sürüm 3.24.5)
 
-- Dart SDK (sürüm X.X.X)
+- Dart SDK (sürüm 3.2.4)
 
 - [Diğer gerekli yazılımlar]
 
@@ -150,7 +150,7 @@ lib/
 
 ## İletişim
 
-- Proje Bağlantısı: [GitHub repository linki]
+- Proje Bağlantısı: [https://github.com/KeremAgiroz/InfiniteShelves.git]
 
 - İstinye Üniversitesi: [https://www.istinye.edu.tr/](https://www.istinye.edu.tr/)
 
