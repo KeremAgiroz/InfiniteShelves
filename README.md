@@ -22,17 +22,17 @@ Uygulamanın arayüzü sade ve ferah bir tasarıma sahiptir. Kullanıcılar, dil
 
 -  **Takım Üyeleri:**
 
-- X [GitHub]([KeremAgiroz (Kerem Ağıröz)](https://github.com/KeremAgiroz))
+- Kerem Ağıröz https://github.com/KeremAgiroz
 
   
 
 ## Özellikler
 
-- [Dilenen kitap aratılarak okunabilir]
+- Kapsamlı Arama ve Filtreleme Özelliği:Kullanıcıların istedikleri kitapları veya yazarları kolayca bulabilmeleri için gelişmiş bir arama ve filtreleme sistemi sunar. Bu özellik, kullanıcı deneyimini iyileştirir ve uygulamanın kullanılabilirliğini artırır.
 
-- [Yazarlar hakkında bilgiler edinilebilir]
+- Sade ve Ferah Arayüz Tasarımı: Uygulamamızın arayüzü, kullanıcıların dikkatini dağıtmadan ve göz yormadan kitap okuma deneyimi yaşamalarını sağlayacak şekilde sade ve ferah bir tasarıma sahiptir.
 
-- [İstenilen edebiyat türü seçilip o ülkenin edebiyatına ait kitaplar okunabilir]
+- İstenilen edebiyat türü seçilip o ülkenin edebiyatına ait kitaplar rahatça okunabilme özelliğine sahiptir.
 
   
 
@@ -165,4 +165,3 @@ lib/
   
   
 
-Bunlari degistirmeniz gerekmektedir ;-)
