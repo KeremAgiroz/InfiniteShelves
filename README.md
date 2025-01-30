@@ -17,7 +17,7 @@ Uygulamanın arayüzü sade ve ferah bir tasarıma sahiptir. Kullanıcılar, dil
 ## Ekibimiz
 
 -  **Danışman:**  
-[https://github.com/keyvanarasteh](Keyvan Arasteh)
+[https://github.com/keyvanarasteh] (Keyvan Arasteh)
 
 
 -  **Takım Üyeleri:**
