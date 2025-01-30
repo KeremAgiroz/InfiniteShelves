@@ -4,7 +4,7 @@
 
   
 
-![İInfinite Shelves](mavikit.png)
+![İInfinite Shelves](assets/icons/mavikit.png)
 
   
 
