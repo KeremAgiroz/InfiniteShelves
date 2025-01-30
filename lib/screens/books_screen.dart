@@ -451,7 +451,7 @@ class BooksScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Fareler ve Insanlar",
+                                      "Fareler ve İnsanlar",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
@@ -500,7 +500,7 @@ class BooksScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Kucuk Prens",
+                                      "Küçük Prens",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
@@ -553,7 +553,7 @@ class BooksScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Pembe Fili Dusunme",
+                                      "Pembe Fili Düşünme",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
@@ -602,7 +602,7 @@ class BooksScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Sokrates Oncesi ve Sonrasi",
+                                      "Sokrates Öncesi ve Sonrası",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,

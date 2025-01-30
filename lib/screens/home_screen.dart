@@ -9,6 +9,7 @@ import 'package:flutter_app/widgets/bottom_menu.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_app/widgets/suggested_action_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -68,30 +69,22 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               leading: const Icon(CupertinoIcons.settings),
               title: const Text('Ayarlar'),
-              onTap: () {
-                Navigator.pop(context);
-              },
+              onTap: () => context.push("/settings"),
             ),
             ListTile(
               leading: const Icon(CupertinoIcons.person),
               title: const Text('Profil'),
-              onTap: () {
-                Navigator.pop(context);
-              },
+              onTap: () => context.go("/profile"),
             ),
             ListTile(
               leading: const Icon(CupertinoIcons.pencil),
               title: const Text('Yazarlar'),
-              onTap: () {
-                Navigator.pop(context);
-              },
+              onTap: () => context.go("/authors"),
             ),
             ListTile(
               leading: const Icon(CupertinoIcons.book),
               title: const Text('Kitaplar'),
-              onTap: () {
-                Navigator.pop(context);
-              },
+              onTap: () => context.go("/books"),
             ),
             Spacer(),
             Divider(),
@@ -125,39 +118,60 @@ class HomeScreen extends StatelessWidget {
             }),
           ),
           Expanded(
+            child: ListView(
+              children: [
+                Text(
+                  textAlign: TextAlign.center,
+                  "Sonsuz Raflarda Kaybolmaya Hazır Mısın?",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: colors["onSurface"],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            flex: 8,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.surfaceVariant,
+                borderRadius: BorderRadius.vertical(top: Radius.circular(32)),
+              ),
               child: ListView(
-            children: [
-              Text(
-                "Günün Alıntısı",
-                style: TextStyle(
-                  fontSize: 24,
-                  color: colors["onSurface"],
-                ),
+                padding: EdgeInsets.all(24),
+                children: [
+                  SuggestedActionCard(
+                    icon: Icons.book,
+                    title: "Kitaplar",
+                    subtitle: "Kitapları okumaya başlayın",
+                    onTap: () => context.push("/books"),
+                  ),
+                  SizedBox(height: 16),
+                  SuggestedActionCard(
+                    icon: Icons.person_2_rounded,
+                    title: "Yazarlar",
+                    subtitle: "Yazarları keşfedin",
+                    onTap: () => context.push("/authors"),
+                  ),
+                  SizedBox(height: 16),
+                  SuggestedActionCard(
+                    icon: Icons.history,
+                    title: "Son Aramalar",
+                    subtitle: "Geçmiş aramalarınızı görüntüleyin",
+                    onTap: () => context.push("/search"),
+                  ),
+                  SizedBox(height: 16),
+                  SuggestedActionCard(
+                    icon: Icons.settings,
+                    title: "Ayarlar",
+                    subtitle: "Uygulama ayarlarını özelleştirin",
+                    onTap: () => context.push("/settings"),
+                  ),
+                ],
               ),
-              Text(
-                "'Şu uyku insanın sevgilisi gibi bir şey, gelmeyince sinirlendiriyor.' ~Mahalle Kahvesi - Sait Faik Abasıyanık",
-                style: TextStyle(
-                  fontSize: 15,
-                  color: colors["onSecondary"],
-                ),
-              ),
-              Text(
-                "Günün Kitabı",
-                style: TextStyle(
-                  fontSize: 24,
-                  color: colors["onSurface"],
-                ),
-              ),
-              Text(
-                "Günün Alıntısı",
-                style: TextStyle(fontSize: 24, color: colors["onSecondary"]),
-              ),
-              Text(
-                "Günün Alıntısı",
-                style: TextStyle(fontSize: 24),
-              ),
-            ],
-          ))
+            ),
+          ),
         ],
       ),
 

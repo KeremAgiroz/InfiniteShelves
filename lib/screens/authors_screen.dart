@@ -120,7 +120,7 @@ class AuthorsScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Necip Fazil Kisakurek",
+                                      "Necip Fazıl Kısakürek",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,

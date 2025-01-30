@@ -96,7 +96,7 @@ final darkTheme = ThemeData(
     bodySmall: GoogleFonts.roboto(
         // fontSize: 30,
         ),
-    bodyMedium: GoogleFonts.roboto(),
+    bodyMedium: GoogleFonts.acme(),
     bodyLarge: GoogleFonts.roboto(),
     labelSmall: GoogleFonts.roboto(),
     labelMedium: GoogleFonts.roboto(),

@@ -48,12 +48,27 @@ class SearchScreen extends StatelessWidget {
                     spacing: 8,
                     children: [
                       ActionChip(
-                        label: Text("Necip Fazil"),
+                        label: Text("Necip Fazıl Kısakürek"),
                         onPressed: () {},
                         avatar: Icon(Icons.history, size: 16),
                       ),
                       ActionChip(
                         label: Text("Seker Portali"),
+                        onPressed: () {},
+                        avatar: Icon(Icons.history, size: 16),
+                      ),
+                      ActionChip(
+                        label: Text("Franz Kafka"),
+                        onPressed: () {},
+                        avatar: Icon(Icons.history, size: 16),
+                      ),
+                      ActionChip(
+                        label: Text("Siyah İnci"),
+                        onPressed: () {},
+                        avatar: Icon(Icons.history, size: 16),
+                      ),
+                      ActionChip(
+                        label: Text("Sefiller"),
                         onPressed: () {},
                         avatar: Icon(Icons.history, size: 16),
                       ),
