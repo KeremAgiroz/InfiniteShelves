@@ -26,7 +26,7 @@ class LoadingScreen extends StatelessWidget {
                   width: 300,
                   height: 350,
                   child: Image.asset(
-                    'assets/icons/mavikit.png',
+                    'assets/icons/mavikit.webp',
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -53,7 +53,7 @@ class LoadingScreen extends StatelessWidget {
                 InkWell(
                   onTap: () => context.go("/home"),
                   child: SizedBox(
-                    width: 250,
+                    width: 300,
                     child: DotLottieLoader.fromAsset(
                         "assets/motions/begen.lottie",
                         frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {

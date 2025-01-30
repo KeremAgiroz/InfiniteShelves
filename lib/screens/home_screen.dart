@@ -2,7 +2,7 @@
 import 'package:dotlottie_loader/dotlottie_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_app/core/constants.dart';
+
 import 'package:flutter_app/core/routes.dart';
 import 'package:flutter_app/core/themes.dart';
 import 'package:flutter_app/widgets/bottom_menu.dart';
@@ -94,12 +94,6 @@ class HomeScreen extends StatelessWidget {
       // Ana içerik
       body: Column(
         children: [
-          // Expanded(
-          //   child: Container(
-          //     padding: const EdgeInsets.all(1),
-          //     child: const Text('Ana Sayfa İçeriği'),
-          //   ),
-          // ),
           SizedBox(
             width: 150,
             child: DotLottieLoader.fromAsset("assets/motions/Fenerliii.lottie",

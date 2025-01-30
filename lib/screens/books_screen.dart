@@ -90,22 +90,6 @@ class BooksScreen extends StatelessWidget {
               ),
             ),
           ),
-          // Burada iki kutuyu yan yana koyacağımız Row yapısı kullanılıyor
-          // SliverToBoxAdapter(
-          //   child: Padding(
-          //     padding: EdgeInsets.all(16),
-          //     child: Column(
-          //       crossAxisAlignment: CrossAxisAlignment.start,
-          //       children: [
-          //         Text(
-          //           "Kitaplar",
-          //           style: Theme.of(context).textTheme.titleMedium,
-          //         ),
-          //       ],
-          //     ),
-          //   ),
-          // ),
-
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(16.0),
