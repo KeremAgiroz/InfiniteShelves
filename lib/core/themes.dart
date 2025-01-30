@@ -30,7 +30,7 @@ const colors = {
   "onSurface": Color.fromARGB(255, 31, 100, 177),
   "success": Colors.green,
   "error": Colors.red,
-  "onError": Colors.white,
+  "onError": Color.fromARGB(255, 31, 100, 177),
 };
 
 const darkColors = {
@@ -42,7 +42,7 @@ const darkColors = {
   "onSurface": Color.fromARGB(255, 170, 150, 3),
   "success": Color.fromARGB(255, 0, 90, 0),
   "error": Color.fromARGB(255, 179, 0, 0),
-  "onError": Color.fromARGB(255, 179, 179, 179),
+  "onError": Color.fromARGB(255, 31, 50, 75),
 };
 
 final lightTheme = ThemeData(

@@ -4,6 +4,7 @@ import 'package:flutter_app/screens/authors_screen.dart';
 import 'package:flutter_app/screens/books_screen.dart';
 import 'package:flutter_app/screens/login_screen.dart';
 import 'package:flutter_app/screens/profile_screen.dart';
+import 'package:flutter_app/screens/register_screen.dart';
 import 'package:flutter_app/screens/search_screen.dart';
 import 'package:flutter_app/screens/settings_screen.dart';
 import 'package:go_router/go_router.dart';
@@ -68,6 +69,13 @@ final router = GoRouter(
       pageBuilder: (context, state) => NoTransitionPage<void>(
         key: state.pageKey,
         child: const SettingsScreen(),
+      ),
+    ),
+    GoRoute(
+      path: '/register',
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const RegisterScreen(),
       ),
     ),
   ],

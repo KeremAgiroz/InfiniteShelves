@@ -37,27 +37,19 @@ class HomeScreen extends StatelessWidget {
       drawer: Drawer(
         child: Column(
           children: [
-            // Drawer Header
-            Container(
-              height: 200,
-              color: colors["surface"],
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
-                    CupertinoIcons.person_circle,
-                    size: 80,
-                    color: Colors.black,
-                  ),
-                  const SizedBox(height: 10),
-                  const Text(
-                    'Kullanıcı Adı',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
-                  ),
-                ],
+            UserAccountsDrawerHeader(
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Theme.of(context).colorScheme.onError,
+                child: Icon(
+                  CupertinoIcons.person_circle,
+                  size: 50,
+                  color: Theme.of(context).colorScheme.onPrimary,
+                ),
+              ),
+              accountName: Text("Hoşgeldiniz"),
+              accountEmail: null,
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primary,
               ),
             ),
             // Menü öğeleri
