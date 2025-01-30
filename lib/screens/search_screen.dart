@@ -48,12 +48,12 @@ class SearchScreen extends StatelessWidget {
                     spacing: 8,
                     children: [
                       ActionChip(
-                        label: Text("Necip Fazıl"),
+                        label: Text("Necip Fazil"),
                         onPressed: () {},
                         avatar: Icon(Icons.history, size: 16),
                       ),
                       ActionChip(
-                        label: Text("Dart"),
+                        label: Text("Seker Portali"),
                         onPressed: () {},
                         avatar: Icon(Icons.history, size: 16),
                       ),
@@ -86,13 +86,13 @@ class SearchScreen extends StatelessWidget {
                               // Resim
                               Container(
                                 height: MediaQuery.of(context).size.width *
-                                    0.4, // Resim yüksekliği ekran genişliğine göre ayarlandı
+                                    0.7, // Resim yüksekliği ekran genişliğine göre ayarlandı
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.vertical(
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/icons/apple_icon.png'),
+                                        'assets/images/venorika.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -103,16 +103,10 @@ class SearchScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Başlık 1",
+                                      "Veronika Olmek Istiyor",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "Kart 1 içeriği burada yer alıyor.",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ],
                                 ),
@@ -135,13 +129,13 @@ class SearchScreen extends StatelessWidget {
                               // Resim
                               Container(
                                 height: MediaQuery.of(context).size.width *
-                                    0.4, // Resim yüksekliği ekran genişliğine göre ayarlandı
+                                    0.7, // Resim yüksekliği ekran genişliğine göre ayarlandı
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.vertical(
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
-                                    image: AssetImage(
-                                        'assets/icons/apple_icon.png'),
+                                    image:
+                                        AssetImage('assets/images/cemal.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -152,16 +146,10 @@ class SearchScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Başlık 2",
+                                      "Cemal Sureya",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "Kart 2 içeriği burada yer alıyor.",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ],
                                 ),
@@ -189,13 +177,13 @@ class SearchScreen extends StatelessWidget {
                               // Resim
                               Container(
                                 height: MediaQuery.of(context).size.width *
-                                    0.4, // Resim yüksekliği ekran genişliğine göre ayarlandı
+                                    0.7, // Resim yüksekliği ekran genişliğine göre ayarlandı
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.vertical(
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/icons/apple_icon.png'),
+                                        'assets/images/Atillailh.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -206,16 +194,10 @@ class SearchScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Başlık 1",
+                                      "Atilla Ilhan",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      "Kart 1 içeriği burada yer alıyor.",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ],
                                 ),
@@ -238,13 +220,13 @@ class SearchScreen extends StatelessWidget {
                               // Resim
                               Container(
                                 height: MediaQuery.of(context).size.width *
-                                    0.4, // Resim yüksekliği ekran genişliğine göre ayarlandı
+                                    0.7, // Resim yüksekliği ekran genişliğine göre ayarlandı
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.vertical(
                                       top: Radius.circular(16)),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/icons/apple_icon.png'),
+                                        'assets/images/kirlangic.jpeg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -255,16 +237,100 @@ class SearchScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Başlık 2",
+                                      "Kirlangiç Cigligi",
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleMedium,
                                     ),
-                                    const SizedBox(height: 8),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      // Birinci kutu
+                      Expanded(
+                        child: Card(
+                          elevation: 4,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // Resim
+                              Container(
+                                height: MediaQuery.of(context).size.width *
+                                    0.7, // Resim yüksekliği ekran genişliğine göre ayarlandı
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.vertical(
+                                      top: Radius.circular(16)),
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/images/Rezonans.jpeg'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
                                     Text(
-                                      "Kart 2 içeriği burada yer alıyor.",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
+                                      "Rezonans Kanunu",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleMedium,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 8),
+                      // İkinci kutu
+                      Expanded(
+                        child: Card(
+                          elevation: 4,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // Resim
+                              Container(
+                                height: MediaQuery.of(context).size.width *
+                                    0.7, // Resim yüksekliği ekran genişliğine göre ayarlandı
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.vertical(
+                                      top: Radius.circular(16)),
+                                  image: DecorationImage(
+                                    image:
+                                        AssetImage('assets/images/ahmed.jpeg'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Hasretinden Prangalar Eskittim",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleMedium,
                                     ),
                                   ],
                                 ),
