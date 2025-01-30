@@ -124,7 +124,8 @@ lib/
 
 ## Ekran Görüntüleri
 
-[![Image](https://github.com/user-attachments/assets/ba4c2348-250a-4387-b3d2-17f14b448218)
+[ https://github.com/user-attachments/assets/f684f4a4-9b91-4312-a757-e4c2ac747638
+![Image](https://github.com/user-attachments/assets/ba4c2348-250a-4387-b3d2-17f14b448218)
 
 ![Image](https://github.com/user-attachments/assets/98c6633b-4edd-4db8-ad0a-bd003ff7205d)
 
